@@ -111,7 +111,7 @@ public class HelloStudent extends HttpServlet {
         out.println("</body>");       
         out.println("</html>");
         //response.sendRedirect("http://www.google.com");
-        String studentRecord = "\n" + name + " " + Score + " " + Grade + " " + Attendance;  
+        String studentRecord =  name + " " + Score + " " + Grade + " " + Attendance + "\n" +;  
         StudentFileData.Writefile(StudentFileData.FILE_PATH , StudentFileData.FILE_NAME, studentRecord);
 	}
 
